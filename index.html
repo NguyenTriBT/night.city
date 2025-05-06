@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Deverlopment Website</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+        header { background: url('background.jpg') center/cover no-repeat; height: 100vh; position: relative; }
+        header::after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); }
+        .logo { position: absolute; top: 20px; left: 20px; z-index: 2; }
+        .logo img { height: 60px; }
+        .menu { position: absolute; top: 20px; right: 20px; z-index: 2; }
+        .menu a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: bold; }
+        .hero { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; color: #fff; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 500px; margin: 0 auto; }
+        .button { display: inline-block; background: #f4c300; color: #000; padding: 15px 30px; border-radius: 30px; margin-top: 20px; text-decoration: none; font-weight: bold; }
+        .section { padding: 60px 20px; text-align: center; }
+        .section h2 { font-size: 2rem; margin-bottom: 20px; }
+        .steps { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; }
+        .step { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 300px; }
+        .step img { width: 100%; border-radius: 10px; }
+        footer { background: #222; color: #fff; padding: 40px 20px; text-align: center; }
+        .join { background: #ffe066; padding: 50px 20px; text-align: center; }
+        .join h2 { font-size: 2rem; margin-bottom: 15px; }
+        .join p { max-width: 500px; margin: 0 auto 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt="Night City Logo"></div>
+        <div class="menu">
+            <a href="#">Trang Chủ</a>
+            <a href="#thamgia">Tham Gia Thành Phố</a>
+        </div>
+        <div class="hero">
+            <h1>Thành phố <b>Night</b></h1>
+            <p>Night City – Server chiếm đóng, tranh giành từng khu phố, lãnh thổ thuộc về kẻ mạnh. Gia nhập, chiến đấu, làm chủ Night City!</p>
+            <a href="https://discord.gg/cbeCjBWt" class="button">Tham gia thành phố</a>
+        </div>
+    </header>
+
+    <div class="section">
+        <h2>Hướng dẫn tham gia</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="gtav.png" alt="Mua GTA V">
+                <h3>01. Sở hữu GTA V bản quyền</h3>
+                <p>Mua GTA V trên Steam hoặc các nền tảng khác để chơi Chanh City.</p>
+                <a href="https://discord.gg/xdVkfN43" class="button">Mua trên Steam Hoặc Epic Có Thể Vào Store Mua</a>
+            </div>
+            <div class="step">
+                <img src="launcher.jpg" alt="Tải FIVEM">
+                <h3>02. Tải FiveM</h3>
+                <p>Tải FiveM chính thức để kết nối và Vào Night City.</p>
+                <a href="https://fivem.net/" class="button">Tải về FiveM</a>
+            </div>
+            <div class="step">
+                <img src="discord.jpg" alt="Kết nối Discord">
+                <h3>03. Tham gia cộng đồng</h3>
+                <p>Kết nối Discord chính thức của Chanh City để giao lưu và cập nhật thông tin.</p>
+                <a href="https://discord.gg/cbeCjBWt" class="button">Tham gia Discord</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="join" id="thamgia">
+        <h2>Tham Gia Thành Phố Ngay!</h2>
+        <p>Trở thành công dân của Chanh City, tham gia vào cộng đồng vui nhộn, sáng tạo và đầy bất ngờ.</p>
+        <a href="https://discord.gg/cbeCjBWt" class="button">Tham Gia Ngay</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Night City. All rights reserved.
+    </footer>
+</body>
+</html>
